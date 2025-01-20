@@ -1,0 +1,136 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    overflow-y: auto; /* Allow scrolling */
+    height: 100%; /* Ensure full height for scrolling */
+}
+
+/* Header */
+.header {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box; /* Prevents overflow from padding */
+}
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+.header p {
+    margin: 0.5rem 0 1.5rem;
+}
+
+/* Social Links */
+.social-links a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: #0077b5;
+}
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Projects Section */
+.projects {
+    margin-top: 20px;
+    padding: 2rem;
+    background-color: #fff; /* Default background color */
+    min-height: 100vh; /* Ensure enough height for content */
+}
+.projects h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.project {
+    text-align: center;
+    margin: 2rem auto;
+    width: 300px; /* Adjust width as needed */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+.project-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.project-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+    border-radius: 4px;
+}
+.project-link {
+    color: #0077b5;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 0.5rem;
+}
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 1rem;
+    position: relative; /* Changed to relative so footer stays at the bottom of the content */
+    width: 100%;
+    box-sizing: border-box;
+}
+footer button {
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: #0077b5;
+    color: #fff;
+    border-radius: 5px;
+}
+footer button:hover {
+    background-color: #005f91;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #000000;
+}
+body.dark-mode .header {
+    background-color: #1e1e1e;
+    color: #e4e4e4;
+}
+body.dark-mode footer {
+    background-color: #1e1e1e;
+}
+body.dark-mode .social-links a,
+body.dark-mode .project-link {
+    color: #4e9ef4;
+}
+body.dark-mode footer button {
+    background-color: #4e9ef4;
+}
+body.dark-mode footer button:hover {
+    background-color: #357ac8;
+}
+
+/* Dark Mode Projects Section */
+body.dark-mode .projects {
+    background-color: #333; /* Gray background in dark mode */
+}
+body.dark-mode .projects h2 {
+    color: #fff; /* White text for the "Projects" heading in dark mode */
+}
+
+/* Dark Mode Footer */
+body.dark-mode footer {
+    color: #fff; /* White text for footer in dark mode */
+}
