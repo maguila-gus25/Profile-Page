@@ -5,38 +5,216 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gustavo Ramos - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <header class="header">
-        <h1>Gustavo Ramos</h1>
-        <p>Information Systems student at Federal University of Santa Catarina. I'm 19 years old. I'm always looking to learn and grow in the tech field.</p>
+    <div class="container">
+        <header class="profile-header">
+            <div class="profile-image">
+                <img src="images/profile.jpg" alt="Profile Picture">
+            </div>
+            <h1>Hi👋, I'm Gustavo Ramos</h1>
+            <p class="subtitle">Systems Information Student at UFSC</p>
+            <p class="description">
+                I am a Systems Information student at UFSC with an interest in software development, QA, and software engineering. 
+                I am eager to learn more about automated testing, CI/CD, Databases, and Smart Contracts, always focusing on best practices and scalable solutions.
+            </p>
+            <p class="fun-fact">⚡ Fun fact: I'm brazilian</p>
+        </header>
 
+        <section class="social-links">
+            <a href="https://twitter.com/gustavramos25" target="_blank" class="social-link">
+                <i class="fab fa-twitter"></i>
+                Twitter
+            </a>
+            <a href="https://linkedin.com/in/gustavo-ramos25" target="_blank" class="social-link">
+                <i class="fab fa-linkedin"></i>
+                LinkedIn
+            </a>
+            <a href="https://instagram.com/gustavocramos" target="_blank" class="social-link">
+                <i class="fab fa-instagram"></i>
+                Instagram
+            </a>
+            <a href="https://discord.gg/magodera_777" target="_blank" class="social-link">
+                <i class="fab fa-discord"></i>
+                Discord
+            </a>
+            <a href="mailto:contato.gustavohcramos@gmail.com" class="social-link">
+                <i class="fas fa-envelope"></i>
+                Email
+            </a>
+        </section>
 
-        <nav class="social-links">
-            <a href="https://www.linkedin.com/in/gustavo-ramos-2061a4257/" target="_blank">LinkedIn</a>
-            <a href="https://www.instagram.com/gustavocramos/" target="_blank">Instagram</a>
-            <a href="https://x.com/Gustavramos25" target="_blank">Twitter</a>
-            <a href="mailto:contato.gustavohcramos@gmail.com">Email</a>
-        </nav>
-    </header>
+        <section class="current-projects">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="images/web-dev.jpg" alt="Web Development">
+                    <div class="project-info">
+                        <h3>Web Development Class (INE5646)</h3>
+                        <p>Web Development Class at Universidade Federal de Santa Catarina</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/maguila-gus25/UFSC---INE5646" target="_blank" class="project-link">
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
 
-    <main>
-        <section class="projects">
-            <h2>Projects</h2>
-            <div class="project-container">
-                <div class="project">
-                    <img src="imagem_redimensionada.png" alt="Cinema Management System" class="project-image">
-                    <a href="https://github.com/jpfaraoni/Cinema-Manager" target="_blank" class="project-link">Cinema Management System</a>
+                <div class="project-card">
+                    <img src="images/fibonacci.jpg" alt="Fibonacci and Prime Numbers">
+                    <div class="project-info">
+                        <h3>Desafio-keeps</h3>
+                        <p>Recursive and Linear Fibonacci, and Prime Numbers</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Algorithms</span>
+                        </div>
+                        <a href="https://github.com/maguila-gus25/Desafio-keeps" target="_blank" class="project-link">
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/groq.jpg" alt="Groq AI Chat Bot">
+                    <div class="project-info">
+                        <h3>Chat-Bot</h3>
+                        <p>Chat-Bot using Langchain Groq - More functions soon</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">AI</span>
+                            <span class="tag">Langchain</span>
+                        </div>
+                        <a href="https://github.com/maguila-gus25/Chat-Bot" target="_blank" class="project-link">
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/graphs.jpg" alt="Data Structures Graphs">
+                    <div class="project-info">
+                        <h3>Data Structure Class (INE5609)</h3>
+                        <p>Data Structure Class at Universidade Federal de Santa Catarina</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Data Structures</span>
+                        </div>
+                        <a href="https://github.com/maguila-gus25/UFSC---INE5609" target="_blank" class="project-link">
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/scraping.jpg" alt="Web Scraping">
+                    <div class="project-info">
+                        <h3>Internship Challenge</h3>
+                        <p>Internship Challenge using Web Scrapping of Ship ports</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Web Scraping</span>
+                        </div>
+                        <a href="https://github.com/maguila-gus25/Internship-Challenge" target="_blank" class="project-link">
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/cinema.jpg" alt="Object Oriented Programming">
+                    <div class="project-info">
+                        <h3>Cinema Manager Test</h3>
+                        <p>University assignment testing object-oriented programming concepts</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">OOP</span>
+                            <span class="tag">University</span>
+                        </div>
+                        <a href="https://github.com/maguila-gus25/Cinema-Manager-Test" target="_blank" class="project-link">
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="images/web-learning.jpg" alt="Web Development Learning">
+                    <div class="project-info">
+                        <h3>Tests of Learning Web</h3>
+                        <p>Learning and practicing web development fundamentals</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <a href="https://github.com/maguila-gus25/Tests-of-Learning-Web" target="_blank" class="project-link">
+                            View on GitHub
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
-    </main>
 
-    <footer>
-        <button id="theme-toggle">Toggle Light/Dark Mode</button>
-        <p>&copy; 2025 Gustavo Ramos</p>
-    </footer>
+        <section class="skills">
+            <h2>Languages and Tools</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="Arduino" title="Arduino">
+                    <span>Arduino</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="C++" title="C++">
+                    <span>C++</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="Figma" title="Figma">
+                    <span>Figma</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="Git" title="Git">
+                    <span>Git</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript">
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" title="MySQL">
+                    <span>MySQL</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" title="Python">
+                    <span>Python</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="Node.js" title="Node.js">
+                    <span>Node.js</span>
+                </div>
+                <div class="skill-item">
+                    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React" title="React">
+                    <span>React</span>
+                </div>
+                <div class="skill-item">
+                    <img src="images/open-ai-logo.jpg" alt="OpenAI" title="OpenAI">
+                    <span>OpenAI</span>
+                </div>
+            </div>
+        </section>
 
+        <section class="learning">
+            <h2>Currently Learning</h2>
+            <p>Cyfrin Blockchain Basics and JavaScript</p>
+        </section>
+
+        <footer>
+            <button id="theme-toggle">Toggle Dark Mode</button>
+            <p>&copy; 2025 Gustavo Ramos</p>
+        </footer>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
