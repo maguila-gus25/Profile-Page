@@ -8,44 +8,50 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#home">GR</a>
+            </div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button id="theme-toggle" class="nav-theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
     <div class="container">
-        <header class="profile-header">
+        <header id="home" class="profile-header">
             <div class="profile-image">
                 <img src="images/profile.jpg" alt="Profile Picture">
             </div>
             <h1>Hi👋, I'm Gustavo Ramos</h1>
             <p class="subtitle">Systems Information Student at UFSC</p>
-            <p class="description">
-                I am a Systems Information student at UFSC with an interest in software development, QA, and software engineering. 
-                I am eager to learn more about automated testing, CI/CD, Databases, and Smart Contracts, always focusing on best practices and scalable solutions.
-            </p>
+            <div class="bio-section">
+                <p class="description">
+                    I am a Systems Information student at UFSC with a strong passion for software development and emerging technologies. 
+                    My academic journey has equipped me with solid foundations in software engineering, quality assurance, and database management.
+                </p>
+                <p class="description">
+                    Currently, I'm expanding my expertise in blockchain technology and cybersecurity, focusing on smart contract development 
+                    and secure software practices. I'm particularly interested in exploring the intersection of these fields to build 
+                    robust, secure, and scalable solutions.
+                </p>
+                <p class="description">
+                    My technical skills span across web development, data structures, and AI applications, with a growing focus on 
+                    blockchain development and security best practices. I'm committed to continuous learning and staying at the 
+                    forefront of technological innovation.
+                </p>
+            </div>
             <p class="fun-fact">⚡ Fun fact: I'm brazilian</p>
         </header>
 
-        <section class="social-links">
-            <a href="https://twitter.com/gustavramos25" target="_blank" class="social-link">
-                <i class="fab fa-twitter"></i>
-                Twitter
-            </a>
-            <a href="https://linkedin.com/in/gustavo-ramos25" target="_blank" class="social-link">
-                <i class="fab fa-linkedin"></i>
-                LinkedIn
-            </a>
-            <a href="https://instagram.com/gustavocramos" target="_blank" class="social-link">
-                <i class="fab fa-instagram"></i>
-                Instagram
-            </a>
-            <a href="https://discord.gg/magodera_777" target="_blank" class="social-link">
-                <i class="fab fa-discord"></i>
-                Discord
-            </a>
-            <a href="mailto:contato.gustavohcramos@gmail.com" class="social-link">
-                <i class="fas fa-envelope"></i>
-                Email
-            </a>
-        </section>
-
-        <section class="current-projects">
+        <section id="projects" class="current-projects">
             <h2>My Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
@@ -159,7 +165,7 @@
             </div>
         </section>
 
-        <section class="skills">
+        <section id="skills" class="skills">
             <h2>Languages and Tools</h2>
             <div class="skills-grid">
                 <div class="skill-item">
@@ -205,14 +211,81 @@
             </div>
         </section>
 
-        <section class="learning">
-            <h2>Currently Learning</h2>
-            <p>Cyfrin Blockchain Basics and JavaScript</p>
+        <section id="contact" class="social-links">
+            <h2>Let's Connect!</h2>
+            <p class="contact-description">Feel free to reach out for collaborations or just to say hi!</p>
+            <div class="contact-grid">
+                <a href="https://twitter.com/gustavramos25" target="_blank" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+                <a href="https://linkedin.com/in/gustavo-ramos25" target="_blank" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://instagram.com/gustavocramos" target="_blank" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="https://discord.gg/magodera_777" target="_blank" class="social-link">
+                    <i class="fab fa-discord"></i>
+                    <span>Discord</span>
+                </a>
+                <a href="mailto:contato.gustavohcramos@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+            </div>
         </section>
 
-        <footer>
-            <button id="theme-toggle">Toggle Dark Mode</button>
-            <p>&copy; 2025 Gustavo Ramos</p>
+        <section class="learning">
+            <h2>Currently Learning</h2>
+            <div class="learning-content">
+                <div class="learning-item">
+                    <h3>Web Development</h3>
+                    <p>Deepening my knowledge in modern web technologies, focusing on:</p>
+                    <ul>
+                        <li>Advanced JavaScript and TypeScript</li>
+                        <li>React.js and Next.js frameworks</li>
+                        <li>Responsive design and UI/UX principles</li>
+                        <li>RESTful APIs and GraphQL</li>
+                    </ul>
+                </div>
+                <div class="learning-item">
+                    <h3>Blockchain Development</h3>
+                    <p>Exploring the world of blockchain and decentralized applications:</p>
+                    <ul>
+                        <li>Smart contract development with Solidity</li>
+                        <li>Web3.js and Ethers.js integration</li>
+                        <li>Decentralized Finance (DeFi) concepts</li>
+                        <li>Blockchain security best practices</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Gustavo Ramos</h3>
+                    <p>Systems Information Student at UFSC</p>
+                    <p>Blockchain & Cybersecurity Enthusiast</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#top">Back to Top</a>
+                    <a href="https://github.com/maguila-gus25" target="_blank">GitHub</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: contato.gustavohcramos@gmail.com</p>
+                    <p>Location: Florianópolis, Brazil</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <button id="theme-toggle">Toggle Dark Mode</button>
+                <p>&copy; 2025 Gustavo Ramos. All rights reserved.</p>
+            </div>
         </footer>
     </div>
     <script src="script.js"></script>
